@@ -50,20 +50,20 @@ Raw data → Missing-value handling → EDA → Encoding → Scaling
 ## 🔍 Exploratory Data Analysis
 
 ### Target imbalance and income vs. credit amount
-![Target and income](./images/01_target_income_credit.png)
+![Target and income](./01_target_income_credit.png)
 
 Only ~8 % of applicants default, so plain accuracy would be misleading — F1, recall and AUC are used instead.
 
 ### Default behaviour by gender
-![Gender](./images/02_gender.png)
+![Gender](./02_gender.png)
 
 ### Correlation heatmap
-![Correlation](./images/03_correlation.png)
+![Correlation](./03_correlation.png)
 
 ## 🌲 Feature Importance
 A quick Random Forest baseline ranks the most predictive features.
 
-![Feature importance](./images/04_feature_importance.png)
+![Feature importance](./04_feature_importance.png)
 
 ## 🤖 Modelling & Results
 
@@ -75,15 +75,15 @@ Four models were trained and evaluated at a probability threshold of **0.6**.
 | Tuned Random Forest (`max_depth=16`, `n_estimators=150`) | 0.964 | 0.951 | 0.885 | 0.880 |
 | **XGBoost** (150 trees, depth 6, lr 0.1) | 0.972 | **0.970** | **0.950** | **0.948** |
 
-![Model comparison](./images/10_model_comparison.png)
+![Model comparison](./10_model_comparison.png)
 
 ### ROC curves
-![ROC](./images/09_roc.png)
+![ROC](./09_roc.png)
 
 ### Confusion matrices (threshold = 0.6)
 | Logistic Regression | Tuned Random Forest | XGBoost |
 |:---:|:---:|:---:|
-| ![LR](./images/05_cm_logreg.png) | ![RF](./images/07_cm_tuned_rf.png) | ![XGB](./images/08_cm_xgb.png) |
+| ![LR](./05_cm_logreg.png) | ![RF](./07_cm_tuned_rf.png) | ![XGB](./08_cm_xgb.png) |
 
 **Takeaways**
 - Tree ensembles massively outperform the linear baseline → the signal is non-linear.
