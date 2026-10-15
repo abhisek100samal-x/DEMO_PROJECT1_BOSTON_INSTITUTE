@@ -22,14 +22,14 @@
 ---
 
 ## 🎯 Business Problem
-Lenders lose money when borrowers default, yet rejecting good applicants costs revenue. The goal is a **binary classifier** that flags applicants likely to experience payment difficulties (`TARGET = 1`) from application-time information: income, loan amount, annuity, employment, education, housing, and more.
+The primary business problem is to develop a machine learning-based binary classification system that distinguishes legitimate transactions from fraudulent transactions using relevant transaction features. The model will classify each transaction as legitimate (Class 0) or fraudulent (Class 1).
 
 ## 📊 Dataset
 | Item | Value |
 |---|---|
 | Source | Home Credit `application_data.csv` |
 | Rows × Columns | 307,511 × 122 |
-| Target | `TARGET` (1 = payment difficulty, 0 = otherwise) |
+| Target | `TARGET`  |
 | Class balance | **91.9 % non-default / 8.1 % default** (highly imbalanced) |
 | Duplicates | 0 |
 
