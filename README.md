@@ -90,13 +90,6 @@ Four models were trained and evaluated at a probability threshold of **0.6**.
 - Hyper-parameter tuning lifted Random Forest F1 from 0.79 → 0.84 on the defaulter class.
 - XGBoost achieves the best scores with a negligible train–test gap.
 
-## ⚠️ Limitations & Next Steps
-Being transparent about the evaluation matters for a credit-risk project:
-
-- **SMOTE is applied before the train/test split.** Synthetic minority samples interpolated from real defaulters can land in both sets, so the test set is not independent and the reported scores (especially XGBoost's 0.97 AUC) are **likely optimistic**. Fix: split first, then apply SMOTE (or class weights) on the training set only, and evaluate on the untouched, naturally imbalanced test set.
-- Scaling, imputation and outlier capping were also fitted on the full dataset; wrap them in a `Pipeline` to avoid leakage.
-- Prefer imbalance-aware metrics on the real distribution: PR-AUC, recall at a fixed precision, KS statistic.
-- Add the Home Credit auxiliary tables (bureau, previous applications), try LightGBM, add SHAP explanations, and calibrate probabilities.
 
 ## 🚀 How to Run
 ```bash
