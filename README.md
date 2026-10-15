@@ -1,6 +1,6 @@
 # 🏦 Credit Card fraud detection.
 
-> End-to-end machine-learning pipeline that predicts whether a loan applicant will have payment difficulties, using 307,511 applications from the Home Credit dataset.
+> An End-to-End Approach to Transaction Classification, Model Evaluation, and Fraud Risk Assessment, using 307,511 applications from the Home Credit dataset.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
