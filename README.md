@@ -1,4 +1,4 @@
-# 🏦 Credit Default Risk Prediction — Home Credit
+# 🏦 Credit Card fraud detection.
 
 > End-to-end machine-learning pipeline that predicts whether a loan applicant will have payment difficulties, using 307,511 applications from the Home Credit dataset.
 
